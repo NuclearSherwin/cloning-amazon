@@ -1,0 +1,482 @@
+:root {
+    --primary-color: #131921;
+    --second-color: #FEBD69;
+    --third-color: #232F3E;
+    --white-color: #fff;
+    --text-color: #0f1111;
+    --background-color: #eaeded;
+    --black-color: #000;
+    --hovering-color: #4CAF50;
+    --green-color: rgb(87, 167, 33);
+    --footer-color: #232F3E;
+    --button-back-to-top-color: #485769;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: var(--background-color);
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-color: var(--primary-color);
+    padding: 0 5px;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.header-top .header-items {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-items .header-logo-links {
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    position: relative;
+    top: 10px;
+}
+
+.header-items a h4,
+h5 {
+    color: var(--white-color);
+}
+
+.header-items a {
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.header-items .search-bar {
+    margin: 0 0 0 20px;
+    height: 50%;
+}
+
+.header-items .search-bar input {
+    /* padding: 10px 250px; */
+    width: 600px;
+    height: 39px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.header-items .search-bar input[type="text"] {
+    font-family: poppins;
+    font-size: 14px;
+    text-align: center;
+}
+
+.header-items .search-bar input::-webkit-input-placeholder {
+    font-size: 16px;
+    color: var(--green-color);
+    opacity: 0.7;
+}
+
+.header-items .search-bar input:focus {
+    border: 3px solid var(--second-color);
+}
+
+.header-items {
+    text-align: center;
+}
+
+.header-items ion-icon {
+    color: var(--white-color);
+}
+
+.header-items .search-icon {
+    background-color: var(--second-color);
+    padding: 5.2px;
+    margin-left: 0px;
+    border-radius: 10%;
+}
+
+.search-icon__inner-icon {
+    position: relative;
+    top: 1px;
+}
+
+.header-items .search-icon:hover {
+    opacity: 0.8;
+    background-color: #ffd900;
+    /* animation */
+    transition: 0.5s ease-in-out;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+
+/* keyframe for shaking search icon */
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+
+/* End key frame */
+
+.header-items a .search-icon ion-icon {
+    color: var(--black-color);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.header-items__cart-style {
+    cursor: pointer;
+}
+
+.header-items__cart-style h4:hover {
+    transition: 0.4s ease-in-out;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.cart__position-down {
+    position: relative;
+    top: 7px;
+    right: 1px;
+}
+
+.header-logo-delivery {
+    cursor: pointer;
+}
+
+.header-logo-delivery,
+h5:hover {
+    transition: 0.4s ease-in-out;
+    font-size: 12px;
+}
+
+
+/* header nav */
+
+.header-nav {
+    display: flex;
+}
+
+.header-nav__dropdown .icon-menu {
+    color: white;
+}
+
+.header-nav__dropdown span {
+    color: white;
+    position: relative;
+    top: -11px;
+}
+
+.header-nav__dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.header-nav__dropdown-content {
+    display: none;
+    position: absolute;
+    top: 46px;
+    left: -5px;
+    min-width: 350px;
+    min-height: 1300px;
+    background-color: var(--background-color);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown-content__items a,
+h1 {
+    color: green;
+}
+
+.header-nav__dropdown:hover .header-nav__dropdown-content {
+    display: block;
+}
+
+
+/* Start navigation bar */
+
+.header .header-nav {
+    background-color: var(--third-color);
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+}
+
+.header .header-nav a {
+    color: var(--white-color);
+    text-decoration: none;
+    margin-left: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header .header-nav ion-icon {
+    font-size: 35px;
+    margin-right: 4px;
+}
+
+.header .header-nav .header-nav__2:hover {
+    border-radius: 5%;
+    transition: 0.4s ease-in-out;
+    background-color: var(--second-color);
+    color: var(--primary-color);
+}
+
+.header .header-nav .header-nav__3:hover {
+    border-radius: 5%;
+    transition: 0.4s ease-in-out;
+    background-color: var(--second-color);
+    color: var(--primary-color);
+}
+
+.header .header-nav .header-nav__4:hover {
+    border-radius: 5%;
+    transition: 0.4s ease-in-out;
+    background-color: var(--second-color);
+    color: var(--primary-color);
+}
+
+.header .header-nav .header-nav__5:hover {
+    border-radius: 5%;
+    transition: 0.4s ease-in-out;
+    background-color: var(--second-color);
+    color: var(--primary-color);
+}
+
+.header .header-nav .header-nav__6:hover {
+    border-radius: 5%;
+    transition: 0.4s ease-in-out;
+    background-color: var(--second-color);
+    color: var(--primary-color);
+}
+
+.header .header-top .header-items h4:hover {
+    border-radius: 7%;
+    transition: 0.4s ease-in-out;
+    font-size: 12px;
+}
+
+.header .header-top .header-items h5:hover {
+    zoom: 1.2px;
+    border-radius: 7%;
+    transition: 0.4s ease-in-out;
+    font-size: 12px;
+}
+
+.header .header-top .header-items .flag-usa img:hover {
+    zoom: 1.3;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* starting container  */
+
+.container {
+    margin-top: 111px;
+}
+
+.container__slider {
+    padding-top: 20%;
+    background-image: url(../img/background-img.webp);
+    background-position: top center;
+    display: flex;
+    cursor: pointer;
+}
+
+
+/* .grid {
+    width: 100%;
+    display: block;
+} */
+
+
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.product {
+    background-color: #fff;
+    padding: 25px;
+    height: 400px;
+    margin-top: 24px;
+    position: relative;
+}
+
+.product:hover {
+    -moz-transform: translate(0px, -5px);
+    -webkit-transform: translate(0px, -5px);
+    -o-transform: translate(0px, -5px);
+    -ms-transform: translate(0px, -5px);
+    transform: translate(0px, -5px);
+    transition: 0.3s ease-in-out;
+    top: -4px;
+    box-shadow: 8px 9px 0px 2px #000000;
+}
+
+.products {
+    padding: 0 12px;
+}
+
+.product__items {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.product__item {
+    width: 50%;
+    list-style-type: none;
+}
+
+.product__item:hover {
+    zoom: (1.2);
+}
+
+.product__item-link {
+    text-decoration: none;
+}
+
+.product__item-img {
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+}
+
+.product__end {
+    text-decoration: none;
+}
+
+.product__item-seemore {
+    color: var(--green-color);
+    font-size: 14px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+
+.product__item-seemore:hover {
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.product__heading {
+    text-align: center;
+    font-size: 16px;
+}
+
+.product__item-title {
+    font-size: 14px;
+    color: var(--black-color);
+    display: block;
+    text-align: center;
+    margin-right: 15px;
+}
+
+
+/* .product__item {}
+
+.product__item-link {}
+
+.product__item-img {}
+
+.product__item-title {}
+
+.product__item {}
+
+.product__item-link {}
+
+.product__item-img {}
+
+.product__item-title {}
+
+.product__item {}
+
+.product__item-link {}
+
+.product__item-img {}
+
+.product__item-title {} */
+
+
+/* Start footer */
+
+.footer {
+    background-color: var(--footer-color);
+    margin-top: 50px;
+}
+
+.footer__button {
+    text-align: center;
+    background-color: var(--button-back-to-top-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer__button-style {
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer__button-style:hover {
+    color: cyan;
+    transition: 0.4s ease-in-out;
+    font-size: 12px;
+}
+
+.footer__information-heading {
+    color: #fff;
+}
+
+.footer__information-heading h4 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer__information-lists {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.footer__information-list {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer_information {
+    margin: 60px;
+}
+
+
+/* Responsive */

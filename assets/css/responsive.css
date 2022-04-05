@@ -1,0 +1,225 @@
+            /* Mobile & Tablet */
+            
+            @media (max-width: 63.9375em) {
+                /* .product__item-seemore {
+                    color: var(--green-color);
+                    font-size: 12px;
+                    position: relative;
+                    top: -13px;
+                } */
+                .cart__position-down {
+                    position: relative;
+                    top: 2px;
+                    right: 1px;
+                }
+            }
+            /* Tablet only */
+            
+            @media (min-width: 46.25em) and (max-width: 63.9375em) {
+                header .header-top .header-items h4 {
+                    display: none;
+                }
+                /* Flag usa */
+                .header .header-top .header-items .flag-usa img {
+                    display: none;
+                }
+                .header-logo-delivery {
+                    display: none;
+                }
+                .icon-inner,
+                .ionicon,
+                svg {
+                    height: 100%;
+                    width: 100%;
+                }
+                .header-items .search-icon {
+                    background-color: var(--second-color);
+                    padding: 4px;
+                    margin-left: 0px;
+                    border-radius: 12%;
+                }
+                .header-items .search-bar {
+                    margin: 0 0 0 20px;
+                }
+                .header-items .search-bar input {
+                    /* padding: 10px 250px; */
+                    width: 450px;
+                    height: 35px;
+                    border-radius: 5px;
+                    outline: none;
+                }
+                .header .header-nav a {
+                    color: var(--white-color);
+                    text-decoration: none;
+                    margin-left: 20px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    display: flex;
+                    align-items: center;
+                }
+                .header .header-nav {
+                    background-color: var(--third-color);
+                    display: flex;
+                    padding: 5px 0;
+                    align-items: center;
+                    font-size: 14px;
+                }
+                .product__item-img {
+                    width: 60px;
+                    height: 60px;
+                    margin-top: 22px;
+                }
+                .product__item-seemore {
+                    color: var(--green-color);
+                    font-size: 14px;
+                    position: absolute;
+                    bottom: 5px;
+                    left: 10px;
+                }
+                .product {
+                    background-color: #fff;
+                    padding: 10px;
+                    height: 310px;
+                    margin-top: 24px;
+                    position: relative;
+                }
+                .product__heading {
+                    text-align: center;
+                    font-size: 14px;
+                }
+                .product__items {
+                    display: flex;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    margin-top: 0px;
+                }
+                .container {
+                    margin-top: 80px;
+                }
+                .container__slider {
+                    padding-top: 20%;
+                    background-image: url(../img/background-img.webp);
+                    background-position: top center;
+                    display: flex;
+                }
+            }
+            /* Mobile phone only */
+            
+            @media (max-width: 46.1875em) {
+                .header-items .search-bar {
+                    display: none;
+                }
+                header .header-top .header-items h4 {
+                    display: none;
+                }
+                /* Flag usa */
+                .header .header-top .header-items .flag-usa img {
+                    display: none;
+                }
+                .header-logo-delivery {
+                    display: none;
+                }
+                .header-items .search-icon {
+                    position: relative;
+                    left: auto;
+                    right: auto;
+                    background-color: var(--second-color);
+                    padding: 4px;
+                    margin-left: 0px;
+                    border-radius: 12%;
+                }
+                .header-logo-img {
+                    margin-left: 40px;
+                }
+                .header .header-nav a {
+                    color: var(--white-color);
+                    text-decoration: none;
+                    margin-left: 14px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    display: flex;
+                    align-items: center;
+                }
+                .header .header-nav {
+                    background-color: var(--third-color);
+                    display: flex;
+                    padding: 5px 0;
+                    align-items: center;
+                    font-size: 12px;
+                    padding-right: 0;
+                }
+                .header .header-nav .header-nav__2 {
+                    display: none;
+                }
+                .header .header-nav .header-nav__3 {
+                    display: none;
+                }
+                .header .header-nav .header-nav__4 {
+                    display: none;
+                }
+                .header .header-nav .header-nav__5 {
+                    display: none;
+                }
+                .header .header-nav .header-nav__6 {
+                    display: none;
+                }
+                .header-logo-links {
+                    position: relative;
+                    right: 70px;
+                }
+                .header-items .search-icon {
+                    width: 30px;
+                    height: 30px;
+                }
+                .search-icon__inner-icon {
+                    transition: 0.2s ease-in-out;
+                    position: relative;
+                    top: -2.2px;
+                    left: -1.1px;
+                }
+                .product {
+                    background-color: #fff;
+                    padding: 10px;
+                    max-height: 240px;
+                    margin-top: 24px;
+                    position: relative;
+                }
+                .product__item-img {
+                    width: 50px;
+                    height: 50px;
+                    margin-top: 12px;
+                }
+                .product__item-title {
+                    font-size: 10px;
+                    color: var(--black-color);
+                    text-align: center;
+                    margin-right: 0px;
+                    margin-top: 12px;
+                }
+                /*  heading */
+                .product__heading {
+                    text-align: center;
+                    font-size: 12px;
+                }
+                .product__item-seemore {
+                    color: var(--green-color);
+                    font-size: 8px;
+                    position: relative;
+                    bottom: 0px;
+                    margin-bottom: 0px;
+                    left: 0px;
+                }
+                .product__item-seemore:hover {
+                    font-size: 12px;
+                    transition: 0.3s ease-in-out;
+                }
+                .container {
+                    margin-top: 70px;
+                }
+                .container__slider {
+                    padding-top: 45%;
+                    background-image: url(../img/background-img.webp);
+                    background-position: top center;
+                    display: flex;
+                }
+            }
